@@ -1,8 +1,5 @@
 # Hello Github World
-# 
 # This project is about some problems in SMOJ.
-
-***
 
 ## I am William King - Xeon
 

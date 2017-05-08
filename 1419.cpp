@@ -37,12 +37,12 @@ void Tarjan(int x)
 	{
 		int target=edge[tmp].t;
 		if (!DFN[target])
-        {  
-            Tarjan(target);  
-            LOW[x]=min(LOW[x],LOW[target]);  
-        }  
-        else if (instack[target]&&LOW[x]>DFN[target]) LOW[x]=DFN[target];  
-        tmp=edge[tmp].n;  
+        {
+            Tarjan(target);
+            LOW[x]=min(LOW[x],LOW[target]);
+        }
+        else if (instack[target]&&LOW[x]>DFN[target]) LOW[x]=DFN[target];
+        tmp=edge[tmp].n;
     }
     if(LOW[x]==DFN[x])
     {
@@ -50,32 +50,32 @@ void Tarjan(int x)
 		Bcnt+=1;
 		do
 		{
-			v=Stap[Stop--];  
-			size[Bcnt]++;  
-			Belong[v]=Bcnt;  
-			instack[v]=false;  
+			v=Stap[Stop--];
+			size[Bcnt]++;
+			Belong[v]=Bcnt;
+			instack[v]=false;
         } while(x!=v);
     }
-    return;   
+    return;
 }
-void Slove()  
-{  
-    Dindex=Stop=Bcnt=0;  
-    memset(LOW,0,sizeof(LOW));  
-    memset(DFN,0,sizeof(DFN));  
+void Solve()
+{
+    Dindex=Stop=Bcnt=0;
+    memset(LOW,0,sizeof(LOW));
+    memset(DFN,0,sizeof(DFN));
     memset(size,0,sizeof(size));
     memset(instack,0,sizeof(instack));
     memset(Stap,0,sizeof(Stap));
     for (int i=1;i<=n;i++)
-		if (!DFN[i]) Tarjan(i);  
-    return;  
-}  
-void Cnt()  
-{  
-    for (int i=1;i<=m;i++)  
-		if (Belong[x[i]]!=Belong[y[i]]) num[Belong[x[i]]]++;  
-    return;  
-}  
+		if (!DFN[i]) Tarjan(i);
+    return;
+}
+void Cnt()
+{
+    for (int i=1;i<=m;i++)
+		if (Belong[x[i]]!=Belong[y[i]]) num[Belong[x[i]]]++;
+    return;
+}
 int main()
 {
 	freopen("1419.in","r",stdin);
@@ -89,7 +89,7 @@ int main()
 		AddEdge(x[i],y[i]);
 	}
 
-	Slove();
+	Solve();
 	memset(num,0,sizeof(num));
 	Cnt();
 
@@ -107,5 +107,4 @@ int main()
 	printf("%d",ans);
 
 	return 0;
-} 
-
+}
