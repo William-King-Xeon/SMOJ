@@ -1,0 +1,42 @@
+"*":
+  "browser-plus": {}
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  editor:
+    fontSize: 21
+    tabLength: 4
+  "exception-reporting":
+    userId: "361d90c6-4e18-4f82-ba59-5bf0eeae77bd"
+  "gcc-make-run": {}
+  "linter-gcc":
+    execPath: "g++"
+    gccLintOnTheFly: true
+  "linter-ui-default":
+    panelHeight: 300
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  "spell-check":
+    useLocales: false
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/core-modules": [
+      "atom"
+    ]
+  },
+  "extends": [
+    "standard",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "react"
+  ],
+  "rules": {
+    "no-unused-vars": 1,
+    "jsx-quotes": [1, "prefer-single"],
+    "react/jsx-uses-vars": 1,
+    "react/jsx-indent-props": [1, 2],
+    "react/jsx-indent": [1, 2],
+    "react/jsx-closing-bracket-location": [1, "line-aligned"],
+    "react/jsx-closing-tag-location": 1,
+    "react/jsx-equals-spacing": [2, "never"]
+  },
+  "globals": {
+    "atom": true,
+    "advanceClock": true,
+    "assert": true,
+    "HTMLElement": true,
+    "MouseEvent": true,
+    "IDBKeyRange": true,
+    "before": true,
+    "beforeEach": true,
+    "after": true,
+    "afterEach": true,
+    "describe": true,
+    "fdescribe": true,
+    "xdescribe": true,
+    "it": true,
+    "xit": true,
+    "stress": true,
+    "waitsForPromise": true,
+    "oneTick": true,
+    "until": true,
+    "runs": true,
+    "openAndActivated": true,
+    "jasmine": true,
+    "expect": true,
+    "spyOn": true,
+    "waitsFor": true,
+    "sinon": true
+  }
+}
