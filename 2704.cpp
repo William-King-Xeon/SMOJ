@@ -2,6 +2,8 @@
 
 int n,m,S[2000005];
 
+void BFS()
+
 int main()
 {
     //freopen("2704.in","r",stdin);
@@ -15,15 +17,15 @@ int main()
 
     scanf("%d%d",&n,&m);
 
-    for (int i=1;i<=m;i++)
+    for (int i=1,x,y,z;i<=m;i++)
     {
         scanf("%d%d%d",&x,&y,&z);
         AddEdge(x,y,z);
     }
 
-    BFS(1);
+    BFS();
 
-    printf("%d\n",ans)
+    printf("%d\n",ans);
 
     return 0;
 }
