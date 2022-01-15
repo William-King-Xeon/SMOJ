@@ -77,7 +77,7 @@
     "classnames": "^2.2.5",
     "etch": "^0.12.5",
     "import-lazy": "^3.0.0",
-    "marked": "^0.3.6"
+    "marked": "^4.0.10"
   },
   "deprecated": false,
   "description": "An experiment into an enhanced UI for the Atom Linter package.",
